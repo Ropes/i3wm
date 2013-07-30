@@ -145,16 +145,10 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        output LVDS1
-        tray_output LVDS1
-        position top
-        status_command i3status
+    output LVDS1
+    status_command i3status
 }
-
 bar {
-        output HDMI1
-        output DP1 
-        output DP2
-        workspace_buttons yes
-        position bottom
+    output DP1
+    status_command i3status
 }
